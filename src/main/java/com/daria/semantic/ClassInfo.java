@@ -3,13 +3,13 @@ package com.daria.semantic;
 import java.util.HashMap;
 import java.util.Map;
 
-public class SemanticInfo {
+public class ClassInfo {
 
     private final String name;
     private final StructInfo fields;
-    private final Map<String,FunctionInfo> methods = new HashMap<>();
+    private final Map<String, FunctionInfo> methods = new HashMap<>();
 
-    public SemanticInfo(String name, StructInfo fields) {
+    public ClassInfo(String name) {
         this.name = name;
         this.fields = new StructInfo(name);
     }
@@ -17,18 +17,20 @@ public class SemanticInfo {
     public String getName() {
         return name;
     }
+
     public StructInfo getFields() {
         return fields;
     }
 
-    public void addMethod(String name,FunctionInfo function){
-        if(methods.containsKey(name)){
-            throw new SemanticException("Method already defined: " + function + " in class " + name);
+    public void addMethod(String methodName, FunctionInfo methodInfo) {
+        if (methods.containsKey(methodName)) {
+            throw new SemanticException("Method already defined: " + methodName + " in class " + name);
         }
-        methods.put(name,function);
+
+        methods.put(methodName, methodInfo);
     }
 
-    public FunctionInfo findMethod(String name){
-        return methods.get(name);
+    public FunctionInfo findMethod(String methodName) {
+        return methods.get(methodName);
     }
 }

@@ -1,4 +1,7 @@
 package com.daria.semantic;
 
-public class Type {
+public enum Type {
+    INT,
+    REAL,
+    BOOL
 }
