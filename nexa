@@ -1,0 +1,17 @@
+#!/bin/bash
+
+SOURCE_FILE="$1"
+MODE="$2"
+
+COMPILER_JAR="$HOME/.nexa/compiler.jar"
+
+java -jar "$COMPILER_JAR" "$SOURCE_FILE"
+
+LLVM_FILE="${SOURCE_FILE%.*}.ll"
+EXEC_FILE="${SOURCE_FILE%.*}"
+
+if [ "$MODE" = "--build" ]; then
+    clang "$LLVM_FILE" -o "$EXEC_FILE"
+else
+    lli "$LLVM_FILE"
+fi
