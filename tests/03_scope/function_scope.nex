@@ -1,0 +1,14 @@
+int x = 100;
+
+function int calculate(int x) {
+  int result = x + 5;
+  return result;
+}
+
+program Main
+
+show(x);
+show(calculate(10));
+show(x);
+
+end

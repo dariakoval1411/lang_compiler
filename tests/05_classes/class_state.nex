@@ -1,0 +1,38 @@
+class Calculator {
+
+  int base;
+
+  function int add(int value) {
+    return this.base + value;
+  }
+}
+
+
+class Counter { 
+  int value;
+
+  function int get() { 
+    return this.value;
+  }
+
+  function int add(int amount) { 
+    this.value = this.value + amount;
+    return this.value;
+  }
+
+}
+
+program Main 
+
+Calculator calculator;
+Counter counter;
+
+calculator.base = 10;
+counter.value = 5;
+
+show(calculator.add(5));
+show(counter.get());
+show(counter.add(3));
+show(counter.get());
+
+end

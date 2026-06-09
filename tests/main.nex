@@ -1,0 +1,86 @@
+struct Student {
+    int age;
+    real grade;
+}
+
+class Counter {
+    int value;
+
+    function int get() {
+        return this.value;
+    }
+
+    function int add(int amount) {
+        this.value = this.value + amount;
+        return this.value;
+    }
+}
+
+int globalBonus = 10;
+
+function int add(int a, int b) {
+    return a + b;
+}
+
+function int sumRange(int start, int finish, int result) {
+    while (start <= finish) {
+        result = result + start;
+        start = start + 1;
+    }
+
+    return result;
+}
+
+function real multiplyReal(real value, int factor) {
+    return value * factor;
+}
+
+program Main
+
+int numbers[3];
+
+numbers[0] = 2;
+numbers[1] = 4;
+numbers[2] = 6;
+
+show(numbers[0]);
+show(numbers[1]);
+show(numbers[2]);
+
+int sum = numbers[0] + numbers[1] + numbers[2];
+
+show(sum);
+
+if (sum > 10) {
+    show(add(sum, globalBonus));
+} else {
+    show(sum);
+}
+
+show(sumRange(1, 5, 0));
+
+Student student;
+
+student.age = 21;
+student.grade = 4.5;
+
+show(student.age);
+show(student.grade);
+show(multiplyReal(student.grade, 2));
+
+Counter counter;
+
+counter.value = 5;
+
+show(counter.get());
+show(counter.add(3));
+show(counter.get());
+
+{
+    int sum = 100;
+    show(sum);
+}
+
+show(sum);
+
+end

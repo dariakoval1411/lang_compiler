@@ -1,0 +1,9 @@
+program Main
+
+int x = 7;
+
+if(x) {
+  show(x);
+}
+
+end

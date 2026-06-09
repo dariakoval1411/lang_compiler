@@ -1,0 +1,15 @@
+program Main
+
+int i = 1;
+
+while(i <= 5) {
+
+  if(i == 3) {
+    show(i*10);
+  }else {
+     show(i);
+  }
+  i = i + 1;
+}
+
+end

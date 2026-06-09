@@ -1,0 +1,28 @@
+class Rectangle { 
+  
+  int width;
+  int height;
+
+  function int area() { 
+    return this.width * this.height;
+  }
+
+  function int scale(int value) { 
+    this.width = this.width * value;
+    this.height = this.height * value;
+    return this.area();
+  }
+}
+
+program Main
+
+Rectangle rectangle;
+
+rectangle.width = 3;
+rectangle.height = 4;
+
+show(rectangle.area());
+show(rectangle.scale(2));
+show(rectangle.area());
+
+end

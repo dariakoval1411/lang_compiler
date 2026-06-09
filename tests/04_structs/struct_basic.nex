@@ -1,0 +1,40 @@
+struct Person { 
+  int age;
+  int height;
+}
+
+struct Point { 
+  int x;
+  int y;
+}
+
+struct Product {
+  int count;
+  real price;
+}
+
+program Main
+
+Person perosn;
+Point point;
+Product product;
+
+
+perosn.age = 25;
+perosn.height = 170;
+
+point.x = 3;
+point.y = 4;
+
+product.count = 3;
+product.price = 4.5;
+
+show(perosn.age);
+show(perosn.height);
+
+show(point.x + point.y);
+show(point.x * point.y);
+
+show(product.count * product.price);
+
+end

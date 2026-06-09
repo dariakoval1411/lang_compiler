@@ -1,0 +1,5 @@
+program Main
+
+show(function_1());
+
+end

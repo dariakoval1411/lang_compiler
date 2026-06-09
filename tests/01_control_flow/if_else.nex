@@ -1,0 +1,15 @@
+program Main
+
+int x = 15;
+
+if (x + 2 < 10) {
+  show(x);
+
+  if (x > 5) {
+    show(x + 10);
+  }
+} else {
+  show(0);
+}
+
+end

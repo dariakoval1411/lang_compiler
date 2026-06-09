@@ -1,0 +1,9 @@
+program Main
+
+int x = 7;
+
+if(x > 5 && x < 10) {
+  show(x);
+}
+
+end

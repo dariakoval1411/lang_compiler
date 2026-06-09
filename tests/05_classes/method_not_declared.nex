@@ -1,0 +1,17 @@
+class Calculator {
+    int base;
+
+    function int add(int value) {
+        return this.base + value;
+    }
+}
+
+program Main
+
+Calculator calculator;
+
+calculator.base = 10;
+
+show(calculator.minus(5));
+
+end

@@ -1,0 +1,9 @@
+function int getValue() {
+    return 2.5;
+}
+
+program Main
+
+show(getValue());
+
+end

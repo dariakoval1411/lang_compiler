@@ -1,0 +1,21 @@
+int x = 10;
+
+program Main
+
+show(x);
+
+{
+  int x = 20;
+  show(x);
+
+  {
+    int x = 30;
+    show(x);
+  }
+
+  show(x);
+}
+
+show(x);
+
+end

@@ -1,0 +1,10 @@
+program Main
+
+int x = 10;
+
+while(x) {
+  show(x);
+  x = x - 1;
+}
+
+end

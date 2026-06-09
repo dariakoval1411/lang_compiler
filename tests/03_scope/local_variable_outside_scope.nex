@@ -1,0 +1,10 @@
+program Main
+
+{
+  int x = 7;
+  show(x);
+}
+
+show(x);
+
+end

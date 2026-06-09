@@ -1,0 +1,9 @@
+program Main
+
+if ( x < 10 ) { 
+    
+    show(x);
+
+}
+
+end

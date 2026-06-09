@@ -1,0 +1,5 @@
+program Main
+
+Calculator calculator;
+
+end

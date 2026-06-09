@@ -1,0 +1,11 @@
+struct Person {
+    int age;
+}
+
+program Main
+
+Person person;
+
+person.age = 18.5;
+
+end

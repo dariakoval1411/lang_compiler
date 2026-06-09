@@ -1,0 +1,22 @@
+int counter = 5;
+
+function int increase(int value) { 
+    counter = counter + value;
+    return counter;
+}
+
+program Main
+
+int x = 10;
+
+{
+  int x = 20;
+  show(x);
+}
+
+show(x);
+show(counter);
+show(increase(3));
+show(counter);
+
+end
